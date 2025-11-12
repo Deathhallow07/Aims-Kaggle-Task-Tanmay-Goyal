@@ -1,5 +1,6 @@
 import pandas
 import numpy
+import statistics
 data = pandas.DataFrame({'A': [1, numpy.nan, 3], 'B': [4, 5, numpy.nan]})
 def mean_imputer(data):
     # ORDINAL ENCODER
@@ -92,6 +93,7 @@ def mode_imputer(data):
 new_data = mean_imputer(data=data)
 new_data.to_csv("output.csv")
 print(new_data)
+
 
 
 
